@@ -1,0 +1,127 @@
+.container {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  align-items: flex-start;
+  /* border:1px solid red; */
+}
+
+.column1 {
+  width: 20%;
+  /* position: sticky;
+  top: 0; */
+  /* height: 100vh; Adjust the height as needed */
+  z-index: 1;
+
+}
+
+.column2 {
+  width: 75%;
+  background-color: white;
+  margin-left: 0px;
+  /* overflow-y: auto; /* Enable scrolling for column2 content */
+  /* max-height: auto;  */
+}
+
+.component {
+  width: 100%;
+  background-color: rgb(235, 231, 231);
+  padding: 20px;
+  /* border:1px solid green; */
+}
+
+.filter-sort-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 30px;
+}
+
+.gridsetting {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.gridsetting img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.gridsetting div {
+  display: flex;
+  flex-direction: row;
+}
+
+.product-grid {
+  width:100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Default grid layout with 4 columns */
+  gap: 20px;
+  /* border:1px solid red */
+}
+
+.product-grid.grid-1x {
+  /* Styles for grid layout with 1 column */
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.product-grid.grid-2x {
+  /* Styles for grid layout with 2 columns */
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.product-grid.grid-3x {
+  /* Styles for grid layout with 3 columns */
+  grid-template-columns: repeat(3, 1fr);
+}
+.product-grid.grid-4x {
+  /* Styles for grid layout with 3 columns */
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Add more variants for different grid layouts as needed */
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .component {
+    width:100%;
+    overflow-x: hidden;
+    padding: 5px;
+  }
+
+  .column1 {
+    width: 30%;
+
+  }
+  .column2{
+    width: 65%;
+  }
+  /* .filter-sort-grid{
+    display: none;
+  } */
+  .gridsetting  {
+    display: none;
+  
+  }
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Default grid layout with 4 columns */
+    gap: 10px;
+  }
+}

@@ -1,0 +1,163 @@
+.filter {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+  }
+  
+  .filter h1 {
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .filter ul,
+  .form-check,
+  label {
+    list-style: none;
+    font-size: 13px;
+    line-height: 30px;
+    cursor: pointer;
+  }
+  
+  .form-check>input:focus {
+    box-shadow: none;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .form-check {
+    margin-top: 0;
+  }
+  
+  h5 {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  
+  .form-check>input[type="text"] {
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 30px;
+  }
+  
+  .formpricecont {
+    display: flex;
+  }
+  
+  
+  
+  .product-tag {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .product-tag span {
+    background-color: #ccc;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  .containerrandom {
+    display: flex;
+  }
+  
+  .column1random {
+    width: 35%;
+  }
+  
+  .column2random {
+    width: 65%;
+  }
+  
+  .column1random img {
+    width: 100%;
+  }
+  
+  .ratingrandom {
+    color: gold;
+  }
+  
+  .starrandom {
+    font-size: 20px;
+  }
+  
+  /* Media Queries */
+  
+  @media (max-width: 768px) {
+    .containerrandom {
+      flex-direction: column;
+    }
+  
+    .column1random,
+    .column2random {
+      width: 100%;
+    }
+  
+    .column1random img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+   
+    .filter {
+      padding: 3px;
+      font-size: 12px;
+      width:100%
+    }
+  
+    .filter h1 {
+      font-size: 14px;
+    }
+  
+    .filter ul,
+    .form-check,
+    label {
+      font-size: 11px;
+      line-height: 20px;
+    }
+  
+    .subtitle {
+      font-size: 12px;
+    }
+  
+    h5 {
+      margin-top: 12px;
+      margin-bottom: 0;
+    }
+  
+    .form-check>input[type="text"] {
+      width: 25px;
+      height: 20px;
+    }
+  
+    .colors li {
+      width: 15px;
+      height: 15px;
+    }
+  
+    .product-tag span {
+      font-size: 10px;
+      padding: 3px;
+      font-weight: 700;
+    }
+  
+    .starrandom {
+      font-size: 8px;
+    }
+  }
+  
